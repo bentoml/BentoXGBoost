@@ -5,7 +5,7 @@ import xgboost as xgb
 
 import bentoml
 
-demo_image = bentoml.images.PythonImage(python_version="3.11") \
+demo_image = bentoml.images.Image(python_version="3.11") \
     .python_packages("xgboost", "scikit-learn")
 
 
